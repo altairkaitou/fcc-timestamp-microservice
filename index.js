@@ -32,7 +32,7 @@ app.get("/api/:date?", (req, res) => {
     if (isNaN(req.params.date)) {
       date = new Date(req.params.date);
     } else {
-      date = new Date(Integer.parseInt(req.params.date));
+      date = new Date(parseInt(req.params.date));
     }
   }
 
